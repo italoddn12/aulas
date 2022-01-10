@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <form action="#" id="formulario">
+            <label for="user">Usuario</label>
+            <input type="text" id="user" name="usuario">
+
+            <label for="pass">Senha</label>
+            <input type="password" id="pass" name="senha">
+            
+            <input type="submit" id="submit" name="enviar">
+        </form>
+
+        <script>
+            var $formulario = document.getElementById('formulario');
+            var $usercamp = document.getElementById('user');
+            var $passcamp = document.getElementById('pass');
+            var $enviar = document.getElementById('submit');
+
+            $formulario.addEventListener('submit', check)
+
+            function check(e){
+                if($usercamp.value === "" && $passcamp.value !== ""){
+                    e.preventDefault();
+                    alert("digite o usuario");
+                    $usercamp.style.background='red';
+                    $usercamp.addEventListener('click',function(){
+                        $usercamp.style.background='white';   
+                    });
+
+                }else if($passcamp.value === "" && $usercamp.value !== ""){
+                    e.preventDefault();
+                    alert("digite a senha")  
+                    $passcamp.style.background='red';
+                    $passcamp.addEventListener('click',function(){
+                        $passcamp.style.background='white';   
+                    }); 
+                }else if($passcamp.value === "" && $usercamp.value === ""){
+
+                    alert("digite usuario e senha");
+
+                    $passcamp.style.background='red';
+                    $passcamp.addEventListener('click',function(){
+                        $passcamp.style.background='white';   
+                    });
+
+                    $usercamp.style.background='red';
+                    $usercamp.addEventListener('click',function(){
+                        $usercamp.style.background='white';   
+                    }); 
+                }
+            }
+        </script>
+    </body>
+</html>

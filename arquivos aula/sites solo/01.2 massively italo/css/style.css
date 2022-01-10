@@ -1,0 +1,145 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+}
+.header{
+    background-image: url(../images/pic06.jpg), url(../images/overlay.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    margin-bottom: 5em;
+}
+img{
+    max-width: 100%;
+}
+.nav{
+    display: none;
+}
+.container{
+    margin: 0px 2em;
+}
+.header-main{
+    padding-top: 15em;
+    text-align: center;
+}
+.header-main h1{
+    color: white;
+    font-size: 40px;
+}
+.header-main p{
+    color: white;
+    line-height: 2em;
+    font-size: 1em;
+}
+.header-main p a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px dotted rgba(255,255,255, .5);
+}
+.main{
+    text-align: center;
+}
+.main a{
+    text-decoration: none;
+    color: black;
+}
+.main p{
+    line-height: 2.5em;
+    font-size: 17px;
+    color: rgba(0,0,0, .6);
+}
+.p-aling{
+    text-align: start;
+}
+.main article:not(.primeiro-article){
+    border-top: 2px solid rgba(0,0,0, .1);
+}
+.primeiro-article header{
+    border-top: 2px solid rgba(0,0,0, .1);
+}
+.primeiro-article span{
+    display: block;
+    margin: -10px auto;
+    background: white;
+    width: 50%;
+    height: 60px;  
+}
+.main header{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.button a{
+    display: block;
+    border: solid 2px black;
+    margin-bottom: 5em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.button a:hover,.button:hover{
+    color: rgb(0, 174, 255);
+    border-color: rgb(0, 174, 255);
+    transition: .4s;
+}
+.trocar-pagina{
+    border-top: 2px solid rgba(0,0,0, .1); 
+}
+.pagination{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.pagination a{
+    display: block;
+    border: 2px solid rgba(0,0,0, .1);
+    width: 20%;
+    padding: 10px;
+    margin:auto;
+}
+.pagination b{
+    font-weight:bold;
+    
+}
+.pagination a:hover{
+    color: rgb(0, 174, 255);
+    border-color: rgb(0, 174, 255);
+    transition: .4s;
+}
+.fotter-form{
+    background: #b3b7bb;
+}
+.formulario{
+    padding-top: 2em;
+}
+.formulario label, .formulario input:not(.submit), .formulario textarea{
+    display: block;
+    text-transform: uppercase;  
+}
+.formulario label{
+    font-size: 16px;
+    font-family:sans-serif;
+    margin-top: 1em;
+}
+.formulario textarea{
+    margin-bottom: 2em;
+}
+.formulario input:not(.submit), .formulario textarea{
+    width: 100%;
+    background: #b3b7bb;
+    border: none;
+    border: 2px solid #919395;
+}
+.submit{
+    display: block;
+    margin: auto;
+    border: 2px solid #5c5d5d;
+    background: #b3b7bb;
+    width: 100%;
+    padding: 1em 0px;
+    margin-bottom: 3em;
+}
+
+

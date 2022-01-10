@@ -1,0 +1,96 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <script>
+
+            var arr = ['5',1,20,3,4,5, 'koasdkoasd',20,'30'];
+
+            arr.length // ira mostra quantos indices o array possui
+            
+            var soNumeros = arr.every(function(el, indice, obj){ //every so retorna se tds for true &&
+
+
+                return typeof el === 'number';
+            });
+            console.log(soNumeros);
+
+            var aoMenosUmNumero = arr.some(function(el){ //some so retorna se tiver pelo menos 1 true ||
+
+
+                return typeof el === 'number';
+            });
+            console.log(aoMenosUmNumero);
+
+            var numeros = arr.filter(function(el, i, arr){ //serve para filtrar e deixar somente numeros ou string
+                return typeof el === 'number';
+            });
+            console.log(numeros);
+
+            arr.forEach(function(el,i,arr){ //serve para fazer loop, a cade indice executa a função
+                console.log('elemento=',el,'|','i=',i,' | i - ', arr.toString());
+            });
+
+            var posicaoStr1 = arr.indexOf('koasdkoasd'); // mi mostra a posição do elemento passado por parametro c coloar outro valor na frente ele vai começar a procura depois daquele valor quando nn e encontrado o valor retornado e -1
+            console.log(posicaoStr1);
+
+            var posicaoStr2 = arr.lastIndexOf(20); 
+            console.log(posicaoStr2);
+
+            console.log(numeros);
+            numeros = numeros.map(function(el,i,arr){ // o map e usado quando vc vai alterar cada um dos elementos e voltar para a msm posição
+                return el * i;
+            });
+            console.log(numeros);
+
+            var arr2 = arr.concat(numeros,'ola','arr2',100); // junta duas arrays em uma so da pra passar mais elementos por parametros tambem
+            console.log(arr2);
+
+            var str = arr2.join(' <--> '); //e a msm coisa q o metodo toString mais pode alterar o separador tirando a virgula
+            console.log(str);
+
+            arr.push('novo item'); //ele altera o array original ele retorna o indice do novo item no final da array
+            console.log(arr);
+
+            var ultimoItem = arr.pop() // ele atera a array original ele retira o ultimo item 
+            console.log(ultimoItem);
+            console.log(arr);
+
+            var primeiroItem = arr.shift(); // ele atera a array original ele retira o primeiro item 
+            console.log(primeiroItem);
+            console.log(arr);
+
+            arr.unshift(true,false,'unshift'); //ele altera o array original ele retorna o indice do novo item e acrenta no começo da array
+            console.log(arr);
+
+            var somaDeArr = numeros.reduce(function(anterior, atual, i){ // realiza operaçoes matematicas entre elementos q calcula o anterio e o atual passado por parametros, pode adicionar um parametro de soma fora da função
+                return anterior + atual + i;
+            },10);
+            console.log(numeros);
+            console.log(somaDeArr);
+
+            var testeReduce = ['1','2','3','4','5'].reduceRight(function(anterior, atual){ // reduceRight começa a contar apartir da direita
+                return anterior + atual;
+            });
+            console.log(testeReduce)
+
+            console.log([10,20,30].reverse()) // reverte a odem da array ele modifica a array original
+
+            arr2.slice(2); // ele corta o arr e nn e destrutivo passa 2 parametros falando q e pra mostrar a array ex: do 5 ate o 10
+
+            arr2.splice(2, 0, 'limao','melao'); // metodo destrutivo, ele retorna os indices removidos em uma array, primeiro parametro e a posição aonde vai começar alterar, segundo parametro quantos paramentro vai remover, terceiro parametro passa os items que vc quer incluir
+            console.log(arr2);
+            
+            var arr = texto.split(' '); //essa funcao cria uma array com td usando o parametro para separar um item de outro;
+        </script>
+    </body>
+</html>

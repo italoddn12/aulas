@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+        <p class="paragrafos">fala ae seus corno</p>
+
+        <h2>estrutura basica</h2>
+        <p class="paragrafos">seu otario</p>
+
+        <h3>estrutura basica</h3>
+        <p class="paragrafos">seu otario</p>
+
+        <script>
+            var paragrafos = document.querySelectorAll("p");
+            console.log(paragrafos);
+
+            i = 0;
+            while(paragrafos[i]){
+
+                paragrafos[i].textContent = 'seu site foi invadido por italo :*';
+                i++;
+            }
+        </script>
+    </body>
+</html>

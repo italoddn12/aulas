@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+            @keyframes slide{
+                0%,22%{
+                    transform: translateY(0);
+                }
+                25%,47%{
+                    transform: translateY(-50vh);
+                }
+                50%,72%{
+                    transform: translateY(-100vh);
+                }
+                75%,97%{
+                    transform: translateY(-150vh);
+                }
+                100%{
+                    transform: translateY(-0vh);
+                }
+            }
+            body{
+                font-family: sans-serif;
+                color: white;
+                background: #1a1818;
+                margin: 0;
+            }
+            .slide-externo{
+               width: 80vw;
+               height: 50vh;
+               border: 10px solid white;
+               box-shadow: 0 0 10px black;
+               margin-left: 10vw;
+               overflow: hidden;
+               box-sizing: border-box; 
+            }
+            .slide-interno{
+                width: 100%;
+                animation: slide 15s infinite cubic-bezier(.45,-0.93,.64,1.69);
+            }
+            .slide-interno:hover{
+                animation-play-state: paused;
+            }
+            .slide-interno img{
+                display: block;
+                height: 50vh;
+                width: 100%;
+              /*  object-fit: cover; /*funciona como o background size e evita distorcer*/ 
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>animation - slideshow</h1>
+
+        <div class="slide-externo">
+            <div class="slide-interno">
+               <img src="imagens/slide1.jpg" alt="dog1">
+               <img src="imagens/slide2.jpg" alt="dog2">
+               <img src="imagens/slide3.jpg" alt="dog3">
+               <img src="imagens/slide4.jpg" alt="dog4"> 
+            </div>
+        </div>
+    </body>
+</html>

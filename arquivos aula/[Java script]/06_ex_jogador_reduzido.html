@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        
+        <script>
+    
+            var j1 = parseInt(prompt("jogador 1"));
+            var j2 = parseInt(prompt("jogador 2"));
+
+            if(j1 == j2){
+                alert("empate");
+            }else{
+                var sorte = parseInt(Math.random() * 2);
+
+                if((sorte === 1 && j1 > j2) || (sorte === 0 && j1 < j2)){
+                    alert("o numero sorteado foi ("+sorte+") jogador 1 ganhou");
+                }else{
+                    alert("o numero sorteado foi ("+sorte+") jogador 2 ganhou");
+                }
+            }
+            
+        </script>
+    </body>
+</html>

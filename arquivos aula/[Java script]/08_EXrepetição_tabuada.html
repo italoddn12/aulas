@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+    </body>
+
+    <script>
+        var numero = parseInt(prompt("digite um numero"));
+
+        var indice = 1;
+        while(indice <= 1000){
+            document.write(numero + " X " + indice + " : "+ (numero * indice) + "<br>");
+
+            if(indice % 10 === 0){
+                document.write('<hr>');
+            }
+
+            indice = indice + 1;
+        }
+        
+        /* quando eu quero garantir q o meu comando execute pelo menos 1x eu uso o do dps while
+        do{
+            document.write(numero + " X " + indice + " : "+ (numero * indice) + "<br>");
+            indice = indice + 1;  
+        }
+        while(indice <= 50){
+            document.write(numero + " X " + indice + " : "+ (numero * indice) + "<br>");
+        } */
+
+        /* o comando for e a msm coisa q while mas vc coloca td na msm linha
+        for(var i = 1; i <=50; i++){
+            document.write(numero + " X " + indice + " : "+ (numero * indice) + "<br>");
+        } */
+
+
+
+    </script>
+</html>
+

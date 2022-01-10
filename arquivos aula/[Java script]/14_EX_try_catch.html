@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <button onclick="calcular()">Calcular area</button>
+        <button onclick="outraarea()">outra area</button>
+
+        <div id="display"></div>
+        
+        <script>
+            var n1 = parseFloat(prompt("digite um numero"));
+            var n2 = parseFloat(prompt("digite outro numero"));
+
+
+            function outraarea(){
+                n1 = 0;
+                n2 = 0;
+                msg = 0;
+                var n1 = parseFloat(prompt("digite um numero"));
+                var n2 = parseFloat(prompt("digite outro numero"));
+                
+                msg = n1 * n2;
+                escreve();
+            }
+
+            function escreve(){
+                var display = document.querySelector("#display");
+                display.innerHTML = msg;
+            }
+            function calcular(){
+                msg = n1 * n2;
+                
+                escreve();
+            }
+        </script>
+    </body>
+</html>

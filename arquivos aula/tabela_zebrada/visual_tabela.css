@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(bg.jpg);
+    position: fixed; /*deixar a posição fixa na tela*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+}
+.margin{
+    margin-left: 35%;
+    margin-top: 10%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table tbody tr td{
+    line-height: 3em;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+thead{
+    text-align: left;
+    background-color: rgb(0, 255, 179);
+    border-top: 3px solid black;
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(0, 255, 179);
+}
+table tbody tr:last-child{
+    border-bottom: 3px solid black;
+}
+.comun{
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-top: 15px;;
+}
+.verde{
+    background-color: rgb(7, 206, 146);
+}
+.branco{
+    background-color: white;
+    border: solid 1px rgb(7, 206, 146);
+}
+.grande-verde{
+    font-size: 50px;
+    padding-top: 38px;
+}
+.verde:hover{
+    background-color: white;
+    border: solid 1px rgb(7, 206, 146);
+    transition: background .2s linear;
+}
+.grande-branco{
+    font-size: 50px;
+    padding-top: 38px;
+}
+.branco:hover{
+    background-color:rgb(7, 206, 146);
+    border: solid 1px rgb(7, 206, 146);
+    transition: background .2s linear;
+}

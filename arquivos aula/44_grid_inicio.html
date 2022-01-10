@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            .gridContainer{
+                width: 300px;
+                background: #ccc;
+            }
+
+            .gridItem{
+                background: #999;
+                
+                font-size: 2em;
+                font-family: sans-serif;
+            }
+            .gridItem:nth-child(even){
+                background: #999;
+                color: white;
+            }
+            .gridItem:nth-child(odd){
+                background: #eee;
+            }
+
+            /*Grid*/
+
+            .gridContainer{
+                /*unidade de medida fr pega o espaço q sobra e distribuio para os grid itens e fica sponsivo
+                para deixar uma fixa de maneira q nn fica sponsiva e so dar o valor para uma celula
+                da pra colocar mais valores de fr para uma determinada celula aumentar mais do que a outra
+                e mais facil entender quando c fala em parte da 1 parte pra 1 e 2 parte pra outro do espaço que sobra*/
+                width: 100%;
+                display: grid;
+                /*grid-template-columns: 100px 100px 100px;*/
+                grid-template-columns: repeat(3, 1fr) 100px; /*Atalho para repitir valores iguais*/
+                grid-template-rows: 100px 100px 100px;
+                /*grid-row-gap: 30px;
+                grid-column-gap: 10px;*/
+
+                grid-gap: 30px 10px; /*atalho para o distancimento de linhas e colunas*/
+            }
+
+            .gridItem:nth-child(1){
+                /*para trocar os itens de lugar tem q pensar nas linhas imaginarias e posicionar aonde começa 
+                e aonde termina da pra fazer uma celula ocupar 2 espaços quebrando a grid para ajustar essa quebra
+                basta adicionar mais uma linha no grid container, para fazer uma celula sempre ocupar uma linha td
+                basta colocar o valor 1 no grid column*/
+                background: red;
+
+                /*grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 5;*/
+
+                /*atalhos*/
+                grid-row: 1 / 2;
+                grid-column: 2 / -1;
+            }
+            .gridItem:nth-child(2){
+                grid-row: 1 / 3;
+            }
+            .gridItem:nth-child(6){
+                grid-column: 1 / -1;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+        
+        
+    </body>
+</html>

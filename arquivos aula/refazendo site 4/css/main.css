@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oxygen",arial;
+}
+.clearfix::after, .row::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.top-header{
+    text-align: center;
+}
+.top-header-logo{
+    margin: .5em;
+}
+.top-header-nav{
+    background-color: #612674;
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+}
+.top-header-nav li{
+    padding: 1em;
+    list-style: none;
+}
+.top-header-nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.top-content{
+    text-align: center;
+    padding-top: 3em;
+    background: #f6f6f6;
+}
+.top-content-tittle{
+    color: #612674;
+    font-size: 1.3em;
+    margin-bottom: 1.8em;
+}
+.top-content-subtittle{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5em; 
+}
+.button{
+    display: inline-block;
+    padding: .9em 2.5em;
+    background: #58c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.middle-content{
+    text-align: center;
+    background: #f6f6f6;
+    padding: 2em;
+}
+.icon-play{
+    height: 5em;
+    display: none;
+}
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+span[class^=icon]{
+    font-size: 3.5em;
+    color: #652e79; 
+}
+.middle-content-tittle{
+    text-transform: uppercase;
+    color: #652e79;
+    font-size: 1.25em;
+}
+.middle-content-subtittle{
+    line-height: 1.5;
+    color: #222;
+}
+.bot-content{
+    padding: 2em;
+}
+.bot-content-tittle{
+    letter-spacing: .2em;
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.bot-content-subtittle{
+    line-height: 1.2em;
+}
+.bot-content article{
+    padding-bottom: 3em;
+}
+footer{
+    background-color: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.footer-menu{
+    background-color: #303d4c;
+    list-style: none;
+    padding: .5em;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+}
+.footer-menu span{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+.footer-menu li{
+    margin: 0 1em;
+    display: inline-block;
+}
+@media screen and (min-width:48.75em){
+    .top-content{
+        background-color: #521a66;
+    } 
+    .top-header-logo{
+        float: left;
+    }
+    .top-header-nav{
+        background:transparent;
+    }
+    .top-header-nav a{
+        color: #713a84;
+    }
+    .top-header-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .top-header-nav li{
+        display: inline-block;
+        padding-top: 3em;
+    }
+    .top-content-tittle, .top-content-subtittle{
+        color: white;
+    }
+    .icon-play{
+        display: block;
+    }
+    
+}

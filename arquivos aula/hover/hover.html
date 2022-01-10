@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        a{
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        a::before{
+            content: '';
+            background-color: rgba(0, 0, 0, 0.335);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+            opacity: 0;
+        }
+        a::after{
+            content: 'veja';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: solid 2px white;
+            padding: 10px;
+            color: white;
+            transform: translate(-50%,-50%);
+            transition: all .7s;
+            opacity: 0;
+        }
+        a:hover::before{
+            content: '';
+            background-color: rgba(0, 0, 0, 0.335);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+            opacity: 1;
+        }
+        a:hover::after{
+            content: 'veja';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: solid 2px white;
+            padding: 10px;
+            color: white;
+            transform: translate(-50%,-50%);
+            transition: all 3s;
+            opacity: 1;
+        }
+    </style>
+    <body>
+        <a href="#"><img src="01.jpg" alt=""></a>
+
+        <a href="#"><img src="02.jpg" alt=""></a>
+
+        <a href="#"><img src="03.jpg" alt=""></a>
+
+        <a href="#"><img src="04.jpg" alt=""></a>
+
+        <a href="#"><img src="05.jpg" alt=""></a>
+
+        <a href="#"><img src="06.jpg" alt=""></a>
+    </body>
+</html>

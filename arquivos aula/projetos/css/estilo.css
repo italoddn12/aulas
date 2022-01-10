@@ -1,0 +1,111 @@
+body{
+    font-family: Arial, sans-serif; /*Define c e arial se o cara nn tiver arial nn vai ser sans-serif*/
+    background: #ccc; /*define todo o background atras, atras de outros backgrounds*/
+    margin: 0;
+}
+.top{
+    background-image: url(../imagens/bg-3.jpg); /*imagen do header*/
+    height: 500px;  /*altura da imagen*/
+    background-position: right center; /*centraliza a imagen a direita e no centro*/
+    background-size: cover; /*prencher toda a imagen*/
+    border-top:1px solid transparent ; /*tirar a borda imposta pelo navegador*/
+}
+.top-content{
+    text-align: center; /*Centraliar o texto*/
+    color: white; /*Mudar a cor do texto*/
+    margin-top: 150px; /*define a distancia do texto para o top do header*/
+}
+.top-content h1{
+   text-transform: uppercase; /*trasforma o texto em maisculo*/
+   font-size: 46px; /*define o tamanho da letra*/
+   text-shadow: 3px 3px 2px #333; /*direita,baixo,fumaça ou solida e cor*/ /*define o sombreamento*/
+}
+ul{
+    display: block; /* trasforma toda a lista em bloco */
+    text-align: right; /*alinha toda a lista para a direita*/
+    margin-right: 40px; /*distancia de um bloco para o outro*/
+    margin-top: 20px; /*define a distancia do bloco com o top*/
+}
+li{
+    border: solid rgb(255, 255, 255) 1px; /*define a borda do menu*/
+    list-style: none; /*tira as bolinhas das lista nn ordenada*/
+    display: inline; /*trasforma as linhas em texto*/
+    font-size: 20px; /*define o tamanho da letra*/
+    padding: 10px 13px; /*define a distancia do background com o texto*/
+    background: rgba(0, 0, 0, 0.226); /*define o background*/
+    color: rgb(255, 255, 255); /*define a cor da letra*/
+    text-transform: uppercase; /*define q vai ser maiuculo*/
+    margin-right: 13px; /*define a distancia do canto da teal*/
+
+}
+a{
+    text-decoration: none; /*tira as linha debaixo do link*/
+}
+a:hover li{
+    background-color: rgba(0, 0, 0, 0.431); /*define a cor q o background vai ficar quando passar o mouse em cima*/
+}
+main{
+    width: 80%; /*define o tamanho de todo o conteudo*/
+    margin: auto; /*define a margin deu um bloco para o outro*/
+}
+.content-section{
+    background: whitesmoke;
+    padding: 15px;
+    margin-top: 15px;
+    overflow: auto; /*define q vai ignorar os float dos card*/
+}
+.card{
+    width: 32%; /*define o tamanho de cada card*/
+    float: left; /*coloca todos os card para a direita*/
+}
+.card img{
+    width: 100%; /*dis q a imagen vai ocupar 100% do espaço definido*/
+    display: block; /*define q a imagen vira um bloco para nn dar espaçamento*/
+}
+.card-1, .card-2{
+    margin-right: 2%; /*define o distanciamento de 2 cards*/
+}
+.card p{
+    background: rgb(56, 56, 56);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.content-section2{
+    background: whitesmoke;
+    padding: 15px;
+    margin-top: 15px;
+}
+h2{
+    background-color: rgba(233, 233, 233, 0.993);
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+footer{
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 2px #333;
+    background-color: rgba(0, 0, 0, 0.301);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.top-content p {
+    font-size: 25px;
+    margin-top: 80px;
+    margin-right: 500px;
+    margin-left: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+/* x = horizontal, y = vertical*/

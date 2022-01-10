@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <div></div>
+
+        <script>
+
+            var n = 0;
+
+            function somaUm(){
+                console.log('n',++n);
+
+                if(n >= 10 ){
+                    clearInterval(intervalo)
+                }
+            }
+
+            setTimeout(somaUm, 1000);
+
+            var intervalo = setInterval(somaUm, 1000);
+
+            console.log(intervalo)
+
+            var str = '';
+            var d = document.querySelector('div');
+            var timeoutTeste = setTimeout(function(){
+                for(var i = 0; i < 1000; i++){
+                    str += 'i: ' + i + '--';
+                    d.textContent += str;
+                }
+            },3000)
+
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript Completo</title>
+        <meta charset="utf-8">
+        
+        <style type="text/css">
+        
+            .teste{
+                background: #ff0000;
+            }
+
+	    </style>
+        
+    </head>
+    <body>
+       
+             
+       
+        <h1>Javascript Completo</h1>
+        
+        <div class="teste" style="background: green">apenas um teste</div>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fuga, deleniti repellat iure cum autem excepturi saepe totam quam, nam expedita aspernatur tenetur tempora, cupiditate. Sapiente cumque saepe maiores a.</p>
+        
+        
+        
+        
+        
+        <div class="teste2">teste 2</div>
+
+        <script>
+            var $teste = document.querySelector('.teste');
+            var $p = document.querySelector('p');
+
+            // a propiedade style serve para recuperar e definir estilos inline
+            console.log('bg: ',$teste.style.background)
+
+            // o estilo computado e o estilo q esta sobrepondo os outros e ganho na briga de prioridades
+            console.log('computado: ', getComputedStyle($teste).background);
+        
+            // atura e largura comparado com o documento
+            console.log($p.offsetHeight, $p.offsetWidth);
+
+            // posicao x e y comparado com o documento
+            console.log($p.offsetLeft, $p.offsetTop);
+
+            var $teste2 = document.querySelector('.teste2');
+            console.log($teste2.offsetLeft, $teste2.offsetTop);
+
+            // ele varia em relação a view port
+            console.log($teste.getBoundingClientRect())
+
+        </script>
+        
+    </body>
+</html>

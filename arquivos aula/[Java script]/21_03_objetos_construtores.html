@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <script>
+
+            function Caneta(preco,cor){
+
+                var color = cor || 'black';
+                this.preco = preco || 1;
+                this.mudarCor = function(cor){
+                    color = cor;
+                }
+
+                this.pegaCor = function(){
+                    return color;
+                }
+            }
+
+            var caneta1 = new Caneta(5,'blue');
+
+        </script>
+    </body>
+</html>

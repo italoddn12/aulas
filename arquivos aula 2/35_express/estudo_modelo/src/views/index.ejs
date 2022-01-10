@@ -1,0 +1,50 @@
+<%- include('includes/head'); %>
+
+<section class="container">
+  <h1>Entrar na conta</h1>
+
+  <%- include('includes/messages')%>
+
+  <% if(user) { %>
+  <div>
+    <ul>
+      <li>Você esta logado</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>
+        <a href="/logout">Sair</a>
+      </li>
+    </ul>
+  </div>
+  <% } else { %>
+    <div>
+      <ul>
+        <li>Fazer login</li>
+      </ul>
+    </div>
+  <% } %>
+
+  <form action="/register" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <label>Email</label>
+    <input type="text" name="email">
+
+    <label>Senha</label>
+    <input type="password" name="password">
+    <button>cadastrar</button>
+  </form>
+
+  <form action="/login" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <label>Email</label>
+    <input type="text" name="email">
+
+    <label>Senha</label>
+    <input type="password" name="password">
+    <button>logar</button>
+  </form>
+</section>
+
+<%- include('includes/footer'); %>

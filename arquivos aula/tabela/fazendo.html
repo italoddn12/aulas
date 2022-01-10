@@ -1,0 +1,96 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+
+            body{
+            font-family: sans-serif;
+            }
+            table{
+                border-collapse: collapse;
+                border: black 2px solid;
+            }
+            th{
+                border:rgb(54, 54, 54) 1px solid;
+                
+            }
+            td{
+                border:rgb(54, 54, 54) 1px solid;
+                text-align: center;
+            }
+            table{
+                background: rgb(104, 98, 98);
+                width: 40%;
+                margin-left: 30%;
+            }
+            thead{
+                background: blanchedalmond;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <table>
+
+            <caption>tabela de preços de cursos</caption>
+
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Curso</th>
+                    <th>Investimento</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Valores sujeitos a alterações sem previo aviso</td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td rowspan="3" >Design</td>
+                    <td>InDesign</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>Photoshop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>Illustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td rowspan="4" >Development</td>
+                    <td>HTML</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+
+</html>
+
+<!--TR e linha e TD e coluna-->

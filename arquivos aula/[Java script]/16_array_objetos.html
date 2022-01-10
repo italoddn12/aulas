@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <div class="produtosdiv"></div>
+
+        <script>
+            var produto1 = new Object();
+            produto1.nome = "caneta";
+            produto1.preco = 3;
+            produto1.estoque = 7;
+            produto1.comprar = function(qtd){
+                if(!qtd){
+                    qtd = 1;
+                }
+                console.log("comprou caneta")
+                this.estoque = this.estoque - qtd;
+                console.log(this.estoque);
+            }
+
+            var produto2 = new Object();
+            produto2.nome = "lapis";
+            produto2.preco = 2;
+            produto2.estoque = 6;
+
+            var produto3 = new Object();
+            produto3.nome = "caderno";
+            produto3.preco = 1;
+            produto3.estoque = 5;
+
+            var msg = "";
+
+            msg += "nome: " + produto1.nome + "<br>";
+            msg += "preco: " + produto1.preco + "<br>";
+            msg += "estoque: " + produto1.estoque + "<br>";
+            
+            var produtosdiv = document.querySelector(".produtosdiv");
+            produtosdiv.innerHTML = msg; 
+            
+
+        </script>
+    </body>
+</html>

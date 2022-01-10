@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var $body = document.querySelector('body');
+        var n1 = parseFloat(prompt('digite um numero'));
+        
+
+        $body.innerHTML += `Raiz quadrada: ${n1 ** 0.5}<br><br>`;
+        debugger
+        $body.innerHTML += `${n1} é inteiro: ${Number.isInteger(n1)}<br><br>`;
+
+        $body.innerHTML += `É NaN: ${isNaN(n1)}<br><br>`;
+
+        $body.innerHTML += `Arredondando para baixo: ${Math.floor(n1)}<br><br>`;
+
+        $body.innerHTML += `Arredondando para cima: ${Math.floor(n1)}<br><br>`;
+
+        $body.innerHTML += `Com dus casas decimais ${n1.toFixed(2)}<br>`;
+
+    </script>
+</body>
+</html>
+

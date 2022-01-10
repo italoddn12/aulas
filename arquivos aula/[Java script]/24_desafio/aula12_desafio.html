@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+        
+        <script>
+
+            (function(){
+                window.addEventListener('load', init);
+
+                function init(){
+
+                    var $body = document.getElementById("corpo")
+
+                    var sortido = sortear(5) + 1;  
+
+                    switch(sortido){
+                        case 1: $body.style.backgroundImage = "url(images/1.jpg)";
+                        break;
+
+                        case 2: $body.style.backgroundImage = "url(images/2.jpg)";
+                        break;
+                        
+                        case 3: $body.style.backgroundImage = "url(images/3.jpg)";
+                        break;
+
+                        case 4: $body.style.backgroundImage = "url(images/4.jpg)";
+                        break;
+
+                        case 8: $body.style.backgroundImage = "url(images/5.jpg)"; 
+                    }
+
+                    console.log(sortido);
+                }
+
+            })()
+        </script>
+        
+    </head>
+    <body id="corpo">
+        <h1>Curso Javascript Completo 2018</h1> 
+        
+        <script src=beluga.js></script>
+        
+    </body>
+</html>

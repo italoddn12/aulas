@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let $body = document.querySelector('body');
+        //let nome = prompt('digite o seu nome completo');
+        let nome = 'italo macedo de jesus'
+
+        $body.innerHTML += `Seu nome e: ${nome} <br>`;
+        $body.innerHTML += `Seu nome tem ${nome.length} letras <br>`;
+        $body.innerHTML += `A segunda letra do seu nome é: ${nome.charAt(1)} <br>`;
+        $body.innerHTML += `Qual o primeiro indice da letra A do seu nome? ${nome.indexOf('a')}<br>`;
+        $body.innerHTML += `Qual o ultimo indice da letra a no seu nome? ${nome.lastIndexOf('a')}<br>`;
+        $body.innerHTML += `As ultimas 3 letras do seu nome são: ${nome.slice(-3)}<br>`;
+        $body.innerHTML += `As palavras do seu nome são: <strong> ${nome.split(' ')}<strong/><br>`;
+        $body.innerHTML += `Seu nome com letras maiuculas ${nome.toUpperCase()}<br>`;
+        $body.innerHTML += `Seu nome com letras minusculas ${nome.toLowerCase()}<br>`;
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, sans-serif; /*Define c e arial se o cara nn tiver arial nn vai ser sans-serif*/
+    background: rgb(0, 0, 0); /*define todo o background atras, atras de outros backgrounds*/
+    margin: 0;
+}
+.a{
+    background: red;
+    height: 300px;
+    width: 400px;
+    border: white solid 5px;
+    margin-left: 60px;
+}
+.b{
+    background: rgb(21, 248, 0);
+    height: 300px;
+    width: 400px;
+    border: white solid 5px;
+    
+}
+.c{
+    background: rgb(0, 25, 250);
+    height: 300px;
+    width: 400px;
+    border: white solid 5px;
+}
+header{
+    float: left;
+    margin-top: 30px;
+    margin-left: 3%;
+}
+div{
+    
+    overflow: auto;
+}

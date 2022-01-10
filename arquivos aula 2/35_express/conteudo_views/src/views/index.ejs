@@ -1,0 +1,34 @@
+<%- include('includes/head') %>
+
+  <section class="container">
+    <h1>
+
+      lorem normal
+
+      <!--
+      <% numeros.forEach(num => { %>
+          <%= num %><br>
+      <% }); %>
+      -->
+
+      <!--
+      <% if(typeof titulo !== 'undefined') {%>
+          <%= titulo %>
+      <% } else {%>
+          o titulo nao foi enviado
+        <% } %> -->
+
+      <!--
+      <%= titulo %> <br> escreve exatamente o que esta la
+      <%- titulo %>  executa as tagas html q esta la
+      -->
+
+    </h1>
+    <form action="/" method="post">
+      <label>Cliente</label>
+      <input type="text" name="cliente">
+      <button>submit</button>
+    </form>
+  </section>
+
+<%- include('includes/footer') %>

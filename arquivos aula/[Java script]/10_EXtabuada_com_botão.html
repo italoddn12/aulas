@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+
+        <button onclick="criartabuada()">Criar tabuada</button>
+        <button onclick="limpartabuada()">Limpar Tabuada</button>
+
+        <div id="div1"></div>
+
+        <script>
+
+            var div1 = document.querySelector("#div1")
+            var mensagem = "";
+
+            function criartabuada(){
+                limpartabuada()
+                var n = parseFloat(prompt("digite um numero"));
+
+                var i = 1;
+
+                while(i <= 1000){
+                    mensagem += n + " X "+ i + " = "+(n*i)+"<br>";
+                    i++
+                }
+                div1.innerHTML= mensagem;
+            }
+            function limpartabuada(){
+                mensagem = "";
+
+                div1.innerHTML = mensagem;
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+instalar npm 
+npm init -y
+
+instalar um pacote na ultima versão
+npm install express
+
+instalar ultima versão e nn permitir atualizar
+npm install express -E
+
+atualizar pacotes
+npm update
+
+mover pacotes para dev dependecies
+npm install express --save-dev
+
+mover pacotes para dependecies
+npm install express --save-prod
+
+instalar versão especifica
+npm install express@2.1.0 -E
+
+desinstalar um pacote
+npm unistall express
+
+mostra lista de pacotes
+npm ls
+
+mostra lista de pacotes instalados por min
+npm ls --depth=0
+
+ver pacotes desatualizados
+npm outdated
+
+instalar ultima versão do major especifica
+npm istall express@4.x

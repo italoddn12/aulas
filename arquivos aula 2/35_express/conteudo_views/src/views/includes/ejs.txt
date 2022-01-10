@@ -1,0 +1,11 @@
+<% Controle de fluxo (if,for ...)%>
+<%= mostra escapando tags%>
+<%- mostra executando tags%>
+<%# comentario %>
+<%- include('CAMINHO/ARQUIVO'); %>
+
+<% if(alguma coisa) { %>
+    <%= exibe alguma coisa %>
+<% } else { %>
+    <%= exibe outra coisa %>
+<% } %>

@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+            body{
+                margin-top: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="mais()">+</button>
+        <button onclick="menos()">-</button>
+        <button onclick="vezes()">x</button>
+        <button onclick="dividir()">/</button>
+        <div class="display">numero</div>
+    </body>
+
+    <script>
+        var n1 = parseFloat(prompt("digite um numro"));
+
+        escreve();
+
+        function escreve(){
+            var display = document.querySelector(".display");
+            display.innerHTML = n1;
+        }
+    </script>
+</html>

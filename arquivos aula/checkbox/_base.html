@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+        label span{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: #ddd;
+            border-radius: 50px;
+            position: relative;
+        }
+        label span::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 1px;
+            bottom: 0px;
+            width: 28px;
+            height: 28px;
+            border-radius: 100%;
+            background-color: #aaa;
+            transition: all .3s;
+        }
+        input:checked + span::before{
+            transform: translate(70px);
+            background-color: rgb(0, 162, 255);
+        }
+        input{
+            visibility: hidden;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        
+
+    </style>
+
+
+    <body>
+        <label>
+            <input type="checkbox">
+            <span></span>
+            esporte
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Politica
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Educação
+        </label>
+    </body>
+</html>

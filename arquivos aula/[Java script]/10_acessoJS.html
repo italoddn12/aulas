@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+
+        <button onclick="mostrarTabuada()">Criar tabuada</button>
+        <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+        <div id="div1"></div>
+
+        <script>
+
+            // criei uma variavel para fazer referencia no html
+            var div1 = document.querySelector("#div1");
+
+            // chamei essa variavel e add um texto a ela
+            div1.innerHTML= "texto inserido por italo"
+
+        </script>
+    </body>
+</html>

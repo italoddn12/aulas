@@ -1,0 +1,193 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            /*temos 2 eixo o principal e o vertical, quando mudamos o flex direction estamos mudanod os eixos
+            de posição*/
+            .flexbox{
+                height: 250px;
+                border: 1px solid red;
+                display: flex;
+                margin-bottom: 15px;
+            }
+            .flexbox div{
+                background: orange;
+                width: 300px; /*não aumenta mais c nn couber no container*/
+                margin: 15px;                
+            }
+            .flexbox:nth-child(4){
+                flex-direction: row;/*essa propriedade pode trasforma em linha ou em coluna
+                tambem pode mudar a direção q começa*/
+                flex-wrap: wrap; /*quando nn couber mais vai quebrar a linha*/
+                /*flex-flow: row wrap; e um atalho pra 2 acima*/ 
+            }
+            .flexbox:nth-child(5){
+                justify-content: space-between;/*alinha os elemento na horizontal,
+                space around pega o espaço sobrando e coloca envolta dos filhos,
+                space between vai colocar no meio dos filhos (eixo principal)*/
+            }
+            .flexbox:nth-child(5) div{
+                width: 20px;
+            }
+            .flexbox:nth-child(6){
+                align-items: center;/*vai alinhar na vertical (eixo vertical)*/
+                justify-content: center;
+            }
+            .flexbox:nth-child(7){
+                justify-content: center;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                align-content: flex-end; /*alinha quando tem mais de 1 linha*/
+            }
+            .flexbox:nth-child(7) div{
+                width: 100px;  
+            }
+            .flexbox:nth-child(8){
+                justify-content: center;
+                align-items: center;
+            }
+            .flexbox:nth-child(8) div{
+                background-color: yellow;
+                flex-basis: 50px; /*e exatamente a msm coisa q e a largura*/
+                height: 50px;  
+            }
+            .flexbox:nth-child(9){
+                justify-content: center;
+                align-items: center;
+            }
+            .flexbox:nth-child(9) div{
+                background-color: yellow;
+                flex-basis: 50px; /*e exatamente a msm coisa q e a largura*/
+                height: 50px;  
+            }
+            .flexbox:nth-child(9) div:nth-child(2){
+                flex-grow: 1; /*vai pegar o espaço sobrando e vai aplicar somente no
+                segundo filho*/
+            }
+            .flexbox:nth-child(9) div:nth-child(4){
+                flex-grow: 1; /*vai pegar o espaço sobrando e vai aplicar somente nos
+                filhos selecionados*/
+            }
+            .flexbox:nth-child(10) div{
+                background-color: yellow;
+                flex-basis: 100px; /*e exatamente a msm coisa q e a largura*/
+                height: 50px;
+                margin: 5px;  
+            }
+            .flexbox:nth-child(10) div:nth-child(2){
+                flex-shrink: 2; /*distribui o espaço q ecede como ele tem 2 ele diminui mais*/
+                
+            }
+            .flexbox:nth-child(10) div:nth-child(4){
+                flex-shrink: 1;
+               
+            }
+            .flexbox:nth-child(11) div:nth-child(2){
+                order: 3; /*elemento q tem oderm positiva vai para o final os q tem negativa vai para o começo*/
+            }
+            .flexbox:nth-child(11) div:nth-child(4){
+                order: 2; /*tem q ter 2 elementos pra trocar entre si*/
+            }
+            .flexbox:nth-child(12){
+                align-items: flex-start;
+            }
+            /*formata filhos separadados abaixo*/
+            .flexbox:nth-child(12) div:nth-child(2){
+                align-items: flex-start;
+                align-self: flex-end;
+            }
+            .flexbox:nth-child(12) div:nth-child(3){
+                align-items: flex-start;
+                align-self: center;
+            }
+            .flexbox:nth-child(12) div:nth-child(1){
+                align-items: flex-start;
+                align-self: stretch;
+            }
+            .flexbox:nth-child(13){
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+                height: 500px;
+            }
+            .flexbox:nth-child(13) div{
+                flex-basis: 50px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h2>Display Flex</h2>
+        <p>Acomodar ou distribuir elementos de modo fácil</p>
+        <p>Ajuda a centralizar na vertical</p>
+        
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        
+    </body>
+</html>

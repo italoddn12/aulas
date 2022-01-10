@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+        <div id="output">produtos</div>
+    </body>
+
+    <script>
+        var produtos = new Array('caneta','lapis','tesoura','borracha','caderno','livro');
+        
+        produtos.push('compasso','cartolina');
+
+        var output = document.querySelector('#output');
+
+        var msg = '';
+
+        for(var i = 0; i < produtos.length; i++){
+            msg += 'produto '+ (i+1) +': '+ produtos[i] +'<br>'
+        }
+
+        output.innerHTML = msg;
+    </script>
+
+</html>

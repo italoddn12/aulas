@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <script>
+            innerHeight // e a altura disponivel no momento com variaçoes de tamanho
+            innerWidth // e a largura disponivel no momento com variaçoes de tamanho
+
+            outerHeight // e a altura total sem variaçoes
+            outerWidth // e a largura total sem variaçoes
+
+            pageXOffset // quanto foi escrolhado a pagina no eixo X
+            pageYOffset // quanto foi escrolhado a pagina no eixo y
+
+            screenX //posição da janela em relação ao monitor no eixo x
+            screenY //posição da janela em relação ao monitor no eixo y
+
+            opener // mi da informações da guia q mi mando para outra guia
+
+            history.length //mostra em quantas paginas ja passou
+            history.go(-1) //volta no historico quando e passado parametro negativo e viceversa
+            history.back
+            history.forward
+            
+            location //mostra todas as opçoes
+            location.href //mostra a url q esta no momento
+            location.protocol //mi mostra c esta navegando no http ou no file
+            location.hash //mi mostra c tem uma # no url
+            location.reload() //ele recarrega a pagina
+            location.assign('') // e passado por parametro uma url o history nn e alterado
+            location.replace('') // e passado por parametro uma url o history e alterado
+
+            navigator //mostra todas as opçoes
+            navigator.userAgent //mostra o sistema operacional do usuario
+            navigator.plugins //mostra os plugins abilitados
+            navigator.cookieEnabled //retorna um boleano falando c esta abilitado ou n
+            navigator.platform //mostra o sistema operacional
+
+            screen //mi mostra informações sobre a tela do usuario
+            screen.availHeight //mostra altura disponivel
+            screen.availWidth //mostra largura disponivel
+            screen.width //largura disponivel
+            screen.height //altura disponivel
+
+
+            //////////////// BOM METODOS ////////////////
+
+            alert() // mostra um alert na tela
+            confirm() // mostra uma pergunta na tela e retorna boleano
+
+
+            window.open('https://www.youtube.com/','janela','width=600,height=300') //abre uma nova guia passando o url como parametro
+            // 1 url 2nome da janela 3dento das apas separado com virgula especifica a altura e largura
+
+
+            close() //so funciona com o metodo open
+
+            scrollTo(0,50) //serve para escrolar a pagina ate certa posição (1x 20y)
+            scrollBy(0,10) //serve para escrolar a pagina ate certa posição e soma si clicar dnv(1x 20y)
+
+            print() //manda imprimir a pagina
+
+
+            //////////////// BOM EVENTOS ////////////////
+
+            //EXEMPLO : window.addEventListener('scroll',function(e){
+
+            load //e disparado quando a pagina e as imagens e carregada
+
+            resize //dispara quando mexe no tamanho da tela
+
+            DOMContentLoaded //dispara quando o html tiver carregado nn as imagens e videos
+
+            scroll //toda vez q o scroll e acionado
+        </script>
+    </body>
+</html>

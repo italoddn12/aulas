@@ -1,0 +1,104 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <div class="container">
+            <h1>estrutura basica</h1>
+
+            <button id="btn1" onclick="clicar()">botao 1</button>
+            <button id="btn2">botao 2</button>
+            <button id="btn3">botao 3</button>
+        </div>
+
+        <div class="container">
+            <h1>propagação de enventos</h1>
+
+
+            <div id="d1" style="background: red; padding: 25px;">
+                texto dentro da div
+                <span style="background: yellow;">texto dentro da span</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>delegação de eventos</h1>
+
+            <ul>
+                <li>lista 1 </li>
+                <li>lista 2 </li>
+                <li>lista 3 </li>
+            </ul>
+        </div>
+        <script>
+            var btn2 = document.getElementById('btn2');
+            var btn3 = document.getElementById('btn3');
+
+            btn2.onclick = clicar;
+
+            function clicar(){
+                alert('clicou');
+            }
+
+            btn3.addEventListener("click", function(){
+                alert('clicou com dom nv2');
+            })
+            btn3.addEventListener("click", function(){
+                alert('clicou com dom nv2 com outro evento');
+            })
+
+            var $d1 = document.querySelector("#d1");
+
+            var $d1Span = document.querySelector("#d1 span");
+
+            $d1.addEventListener('click', function(e){
+                console.log("click no $d1");
+                e.stopPropagation();
+            }, false);
+
+            $d1Span.addEventListener('click', function(){
+                console.log("click no $d1Span");
+            }, false);
+
+            document.addEventListener('click',function(evt){
+                console.log('clicou no document');
+                console.log(evt.currentTarget);
+                console.log(this);
+                console.log(evt.target);
+            }, false);
+
+
+            var $ul = document.querySelector("ul");
+            var $lis = document.querySelectorAll("li");
+
+            /*var x = 0;
+            while($lis[x]){
+
+                $lis[x].addEventListener("click", function(e){
+                    e.stopPropagation();
+                    console.log('clicou na li');
+                })  
+                x++;
+            }*/
+
+            $ul.addEventListener('click', function(e){
+                e.stopPropagation();
+                console.log(this);
+                console.log(e.currentTarget);
+                console.log(e.target);
+
+                console.log(e.target.nodeName);
+
+                if(e.target.nodeName === "LI"){
+                    alert("clicou na li");
+                }
+            });
+        </script>
+    </body>
+</html>

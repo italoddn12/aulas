@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        
+        <input type="number" value="0" id="n1">
+        <input type="number" value="0" id="n2">
+        <button id="btn">calcular</button>
+        <div id="nota">sua nota e:</div>
+
+        <script src="beluga.js"></script>
+
+        <script>
+            var $nota1 = document.getElementById('n1');
+            var $nota2 = document.getElementById('n2');
+            var $btn = document.getElementById('btn');
+            var nota = document.getElementById('nota');
+
+            $btn.addEventListener('click',function(){
+
+                value1 = parseInt($nota1.value);
+                value2 = parseInt($nota2.value);
+
+                console.log(value1);
+                console.log(value2);
+
+                if(value1 === 0 || value2 === 0){
+                    nota.textContent = 'reprovado';
+                    return; 
+                }
+                soma = calcularMedia(value1,value2);
+
+                nota.textContent = soma;
+            });
+
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>Lógica de progamação com Javascript</h1>
+
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">*</button>
+        <button onclick="calcular('/')">/</button>
+        <div id="output">numero</div>
+
+        <script>
+            var n1 = parseFloat(prompt('digite um numero'));
+
+            escreve();
+
+            function escreve(){
+                var output = document.querySelector('#output');
+                output.innerHTML= n1;
+            }
+
+            function calcular(simbolo){
+                var n = parseFloat(prompt('digite outro numero'));
+                
+                switch(simbolo){
+                    case '+': 
+                        n1 += n;
+                        break;
+
+                    case '-': 
+                        n1 -= n;
+                        break;
+
+                    case '*': 
+                        n1 *= n;
+                        break;
+
+                    case '/': 
+                        n1 /= n;
+                }
+                escreve();
+            }
+            
+        </script>
+    </body>
+</html>

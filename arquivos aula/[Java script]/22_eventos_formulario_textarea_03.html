@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <div class="container">
+            <h1>estrutura basica</h1>
+            <form action="#">
+
+                <textarea cols="50" rows="10" readonly>contrato de serviço prestados</textarea>
+
+                <br>
+                <label>
+                    <input type="checkbox" id="chk" checked>li e aceito os termos.
+                </label>
+                <br>
+                <input type="submit" value="Continuar" id="btn">
+            </form>
+            
+        </div>
+
+        <script>
+            (function(){
+                'use strict';
+
+                var $btn = document.getElementById('btn');
+                var $chk = document.getElementById('chk');
+
+                //$btn.disabled = toggleBtn();
+
+                $chk.addEventListener('change',function(){
+
+                    //if(this.checked === true){
+
+                    /*if(this.checked){
+                        $btn.disabled = false;  
+                    }else{
+                        $btn.disabled = true;   
+                    }*/
+                    
+                    //$btn.disabled = !this.checked;
+
+                    //$btn.disabled = toggleBtn();
+                });
+                
+                function toggleBtn(){
+                    //return !$chk.checked;
+
+                    $btn.disabled = !$chk.checked;
+                }
+            })();
+        </script>
+    </body>
+</html>

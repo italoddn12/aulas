@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <script>
+            (function(){
+                var peso = parseFloat(prompt("digite o seu peso"));
+
+                var altura = parseFloat(prompt("digite a sua altura"));
+
+                var resultadoimc = calcularimc(peso,altura);
+
+                classificao(resultadoimc);
+
+                function classificao(resultadoimc){
+                    if(resultadoimc <=16.9 ){
+                        alert("o seu imc e: "+resultadoimc+" vc esta muito abaixo do peso");
+                    }
+                    else if(resultadoimc >=17 && resultadoimc <=18.4){
+                        alert("o seu imc e: "+resultadoimc+" abaixo do peso");
+                    }
+                    else if(resultadoimc >=18.5 && resultadoimc<=24.9){
+                        alert("o seu imc e: "+resultadoimc+" peso normal");
+                    }
+                    else if(resultadoimc >=25 && resultadoimc<= 29.9){
+                        alert("o seu imc e: "+resultadoimc+" acima do peso");
+                    }
+                    else if(resultadoimc >=30 && resultadoimc<=34.9){
+                        alert("o seu imc e: "+resultadoimc+" obesidade grau 1");
+                    }
+                    else if(resultadoimc >=35 && resultadoimc<=40){
+                        alert("o seu imc e: "+resultadoimc+" obesidade grau 2");
+                    }
+                    else if(resultadoimc >40){
+                        alert("o seu imc e: "+resultadoimc+" obesidade grau 3");
+                    }
+                }
+                function calcularimc(peso,altura){
+                    var imc = peso / (altura*altura);
+                    return imc; 
+                }
+            })()            
+        </script>
+    </body>
+</html>

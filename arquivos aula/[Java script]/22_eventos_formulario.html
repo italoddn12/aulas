@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <div class="container">
+            <h1>estrutura basica</h1>
+
+            <form action="#">
+                <label for="txtUser">usuario</label>
+                <input type="text" id="txtUser" name="user"><br>
+                <label for="txtPass">Senha</label>
+                <input type="password" id="txtPass" name="Pass">
+                <br>
+                <button type="button" id="btn">Logar</button>
+            </form>
+        </div>
+
+        <script>
+            (function(){
+                'use strict';
+                
+                var $txtUser = document.getElementById("txtUser");
+                var $txtPass = document.getElementById("txtPass");
+                var $btn = document.getElementById("btn");
+
+                $btn.addEventListener('click',function(){
+                    alert('clicou no btn');
+
+                    if($txtUser.value === "" || $txtPass.value == ""){
+                        alert("Preencha todos os campos")
+                    }
+                });
+            })();
+        </script>
+    </body>
+</html>

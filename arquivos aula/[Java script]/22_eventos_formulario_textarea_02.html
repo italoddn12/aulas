@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <div class="container">
+            <h1>estrutura basica</h1>
+
+            <textarea id="msg" cols="50" rows="10" maxlength="50"></textarea>
+            <div id="restaContainer" style="display:none;">Restam <span id="resta"></span> caracteres</div>
+        </div>
+
+        <script>
+            (function(){
+                'use strict';
+
+                
+                var $restaContainer = document.getElementById('restaContainer');
+                var $txtMsg = document.getElementById('msg');
+                var $resta = document.getElementById('resta');
+
+                var maxima = $txtMsg.maxLength;
+
+                $restaContainer.style.display = 'block';
+
+                $resta.textContent = maxima;
+                $txtMsg.addEventListener('input', checkLength);
+
+                // utilizar o input
+                function checkLength(e){
+
+                    var numeroLetrasDigitadas = this.value.length;
+                    $resta.textContent = maxima - numeroLetrasDigitadas; 
+                    
+                }
+            })();
+        </script>
+    </body>
+</html>

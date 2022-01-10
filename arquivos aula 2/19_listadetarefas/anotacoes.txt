@@ -1,0 +1,13 @@
+o set atribute e usado para selecionar atributos dentro de um
+elemento para fazer isso basta colocar
+botaoApagar.setAttribute('class','apagar')
+coloca primeiro o tipo c e class tittle id ou qlq coisa
+e dps o valor do que vc quer add tipo o nome da class
+
+para adicionar a tecla enter vc tem q colocar 
+iputTarefa.addEventListener('keypress', function(e){})
+e capturar o evento de e.keyCode para saber qual a tecla esta
+sendo precionada exp: if (e.keyCode === 13) {} c for o enter
+
+para remover o pai de um elemto basta selecionar seu parent
+el.parentElement.remove();

@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../overlay.png), url(../bg.jpg);
+    width: 35%;
+    height: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    text-align: right;
+    padding:200px 50px 0;
+    background-position: left top;
+    background-size: auto, cover;
+}
+header img{
+    border-radius: 50%;
+}

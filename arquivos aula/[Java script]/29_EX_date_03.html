@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>data de hj</h1>
+
+
+
+            <script>
+
+                (function(){
+                    
+                    var data = new Date();
+                    data.setDate(2);
+                    data.setMonth(2);
+
+                    function formatDate(data){
+                        var dia = data.getDate() < 10 ? '0' + data.getDate() : data.getDate();
+
+                        var mes = data.getMonth() + 1;
+                        mes = mes < 10 ? '0' + mes : mes;
+
+                        return dia + '/'+ mes + '/' + data.getFullYear();
+                    }
+                    console.log(formatDate(data));
+
+                })()
+
+            </script>
+    </body>
+</html>

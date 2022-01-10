@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="css basico">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            body{
+                background-color:rgba(15, 15, 15, 0.404) ; /* trocar a cor do fundo da pagina */
+            }
+            h1{
+                font-family:Arial, Arial, Helvetica, sans-serif; /* trocar o estilo da fonte */
+                font-size:40px; /* trocar o tamanho da fonte */
+                font-style: italic; /* colocar italico ou não */
+                font-variant: small-caps; /* trasnforma td em maisculo com as letras em maisculo maiores */
+                color:gold; /* definir a cor */
+                background-color:mediumspringgreen; /* defini a cor do background so do titulo*/
+
+                /* espaçamento externo ao titulo (elemento) */
+
+                margin-left: 0;
+                margin-top: 50px;
+
+                /* enximento interno ao titulo (elemento) */
+
+                padding-left: 25px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-right: 25px;
+
+                /* Abreviar exp: h1{ pedding ou margin: 50px 40px 30px 20px;} gira no sentido horario 
+                si faltar informação ele ira duplicar os que falta */
+
+                /* o pedding e somado abaixo */
+
+                width: 300px; /* largura */
+                height: 180px; /* altura */
+            }
+
+            h2{
+                border-bottom-color: tomato; /* define a cor da borda */
+                border-bottom-style:solid; /* define o estilo da borda */
+                border-bottom-width: 5px; /* define a largura da borda */
+
+                 /* forma abreviada exp: h1{ border: double 20px tomato;}
+                 ou trocar somente um lado h1{ border-top: double 20px tomato;} */
+
+                padding: 25px; /* enximento interno automatico */
+                color:teal; /* cor do titulo (elemento) */
+                  /* para colocar a borda so em um lado o comando e border-bottom-style */
+            }
+
+            p{
+                font-variant: normal;
+                text-align: left; /* o lado do texto */
+                text-decoration:none; /* decorar o texto exemplo com anderline ou rabiscado */
+                text-indent: 50px; /* o tamanho do espaço quem o texto tem da borda */
+                text-transform:none; /* trasnforma todo o texto em caixa alta */
+                font-size: 30px; /* o tamanho da fonte */
+            }
+
+            #destaque{ /* trocar com do id */
+                color:black;
+            }
+
+            .abacaxi{ /* trocar a cor da class */
+                color:black;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>estrutura basica</h1>
+        <h2>subtitulo da pagina</h2>
+
+        <p>Minions ipsum baboiii poulet tikka masala butt tank yuuu! Baboiii. Pepete underweaaar bappleees 
+            underweaaar bananaaaa bee do bee do bee do daa. Poopayee belloo! Jeje hana dul sae chasy uuuhhh po 
+            kass hana dul sae jeje aaaaaah poulet tikka masala. Jiji wiiiii underweaaar tatata bala tu. Belloo! baboiii 
+            butt hana dul sae. Wiiiii butt ti aamoo! Wiiiii bappleees wiiiii bee do bee do bee do chasy poulet tikka masala 
+            bananaaaa bananaaaa. Me want bananaaa! hahaha bananaaaa poopayee uuuhhh para tú hahaha baboiii wiiiii.</p>
+
+        <p id="destaque">Minions ipsum baboiii poulet tikka masala butt tank yuuu! Baboiii. Pepete underweaaar bappleees 
+            underweaaar bananaaaa bee do bee do bee do daa. Poopayee belloo! Jeje hana dul sae chasy uuuhhh po 
+            kass hana dul sae jeje aaaaaah poulet tikka masala. Jiji wiiiii underweaaar tatata bala tu. Belloo! baboiii 
+            butt hana dul sae. Wiiiii butt ti aamoo! Wiiiii bappleees wiiiii bee do bee do bee do chasy poulet tikka masala 
+            bananaaaa bananaaaa. Me want bananaaa! hahaha bananaaaa poopayee uuuhhh para tú hahaha baboiii wiiiii.</p>
+
+        <p class="abacaxi">Minions ipsum baboiii poulet tikka masala butt tank yuuu! Baboiii. Pepete underweaaar bappleees 
+            underweaaar bananaaaa bee do bee do bee do daa. Poopayee belloo! Jeje hana dul sae chasy uuuhhh po 
+            kass hana dul sae jeje aaaaaah poulet tikka masala. Jiji wiiiii underweaaar tatata bala tu. Belloo! baboiii 
+            butt hana dul sae. Wiiiii butt ti aamoo! Wiiiii bappleees wiiiii bee do bee do bee do chasy poulet tikka masala 
+            bananaaaa bananaaaa. Me want bananaaa! hahaha bananaaaa poopayee uuuhhh para tú hahaha baboiii wiiiii.</p>
+
+        <p class="abacaxi">Minions ipsum baboiii poulet tikka masala butt tank yuuu! Baboiii. Pepete underweaaar bappleees 
+            underweaaar bananaaaa bee do bee do bee do daa. Poopayee belloo! Jeje hana dul sae chasy uuuhhh po 
+            kass hana dul sae jeje aaaaaah poulet tikka masala. Jiji wiiiii underweaaar tatata bala tu. Belloo! baboiii 
+            butt hana dul sae. Wiiiii butt ti aamoo! Wiiiii bappleees wiiiii bee do bee do bee do chasy poulet tikka masala 
+            bananaaaa bananaaaa. Me want bananaaa! hahaha bananaaaa poopayee uuuhhh para tú hahaha baboiii wiiiii.</p>
+
+    </body>
+
+</html>
+
+<!-- 
+    Pseudo-classes em link
+    
+    a:link{ ... } o link comum 
+    a:visited{ ... } ja visito o link
+    a:hover{ ... } passar o mouse por cima
+    a:active{ ... } botão do mouse precionado
+-->
+
+<!-- 
+    list-style
+    
+    list-style-type (o tipo do bolinha ou numero) 
+    list-style-position (a posição da bolinha c e mais interna ou externa a lista)
+    list-style-image (colocar uma imagem na bolinha ou numero)
+-->

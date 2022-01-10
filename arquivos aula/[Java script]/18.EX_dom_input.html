@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+        <input type="text" id="txtnome" value="" placeholder="digite um nome">
+        <button onclick="escreve()">só clica</button>   
+        <div id="msg"></div>
+
+        <script>
+            
+            function escreve(){
+                var referencia = document.querySelector("#txtnome");
+                var referencia2 = document.querySelector("#msg");
+
+                var nome = txtnome.value;
+                referencia2.innerHTML = "Seja bem vindo: <b>"+nome+"</b>";
+            }
+        </script>
+    </body>
+</html>

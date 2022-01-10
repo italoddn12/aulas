@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt_br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="Description" content="lista de documentos do my eggs">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <script>
+
+            var hoje = new Date();
+
+            var x = [0];
+
+            function mudaX(x){
+                var y = x;
+                y.push(2);
+            }
+            mudaX(x);
+
+
+            function mudaCor(cor){
+                console.log(this);
+                this.cor = cor;   
+            }
+
+            var caneta1 = {
+                cor: 'red',
+                mudarCor: mudaCor
+            }
+            caneta1.mudarCor('green');
+            console.log(caneta1);
+
+        </script>
+    </body>
+</html>
